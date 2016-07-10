@@ -1,0 +1,17 @@
+.DS_Store
+.tmp
+.sass-cache
+
+backenf/myapp/local_settings.py
+__pycache__/
+.idea/
+tmp
+*.pyc
+out
+*.log
+db.sqlite3
+
+test-output
+.classpath
+.project
+.settings
