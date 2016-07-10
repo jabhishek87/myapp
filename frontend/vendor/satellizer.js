@@ -23,12 +23,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
       tokenRoot: null,
       baseUrl: '/',
       loginUrl: 'api/api-token-auth/',
-      signupUrl: 'api//auth/signup',
-      unlinkUrl: 'api/auth/unlink',
+      signupUrl: 'api/signup/',
+      unlinkUrl: 'api/auth/unlink/',
       tokenName: 'token',
       tokenPrefix: 'satellizer',
       authHeader: 'Authorization',
-      authToken: 'Bearer',
+      authToken: 'Token',
       storageType: 'localStorage',
       providers: {
         facebook: {

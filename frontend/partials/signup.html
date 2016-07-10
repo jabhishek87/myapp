@@ -4,11 +4,25 @@
       <div class="panel-body">
         <h2 class="text-center">Sign up</h2>
         <form method="post" ng-submit="signup()" name="signupForm">
-          <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.displayName.$invalid && signupForm.displayName.$dirty }">
-            <input class="form-control input-lg" type="text" name="displayName" ng-model="user.displayName" placeholder="Name" required autofocus>
+          <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.username.$invalid && signupForm.username.$dirty }">
+            <input class="form-control input-lg" type="text" name="username" ng-model="user.username" placeholder="UserName" required autofocus>
             <span class="ion-person form-control-feedback"></span>
-            <div class="help-block text-danger" ng-if="signupForm.displayName.$dirty" ng-messages="signupForm.displayName.$error">
-              <div ng-message="required">You must enter your name.</div>
+            <div class="help-block text-danger" ng-if="signupForm.username.$dirty" ng-messages="signupForm.username.$error">
+              <div ng-message="required">You must enter your username.</div>
+            </div>
+          </div>
+          <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.first_name.$invalid && signupForm.first_name.$dirty }">
+            <input class="form-control input-lg" type="text" name="first_name" ng-model="user.first_name" placeholder="First Name" required autofocus>
+            <span class="ion-person form-control-feedback"></span>
+            <div class="help-block text-danger" ng-if="signupForm.first_name.$dirty" ng-messages="signupForm.first_name.$error">
+              <div ng-message="required">You must enter your first name.</div>
+            </div>
+          </div>
+           <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.last_name.$invalid && signupForm.last_name.$dirty }">
+            <input class="form-control input-lg" type="text" name="last_name" ng-model="user.last_name" placeholder="Last Name" required autofocus>
+            <span class="ion-person form-control-feedback"></span>
+            <div class="help-block text-danger" ng-if="signupForm.last_name.$dirty" ng-messages="signupForm.last_name.$error">
+              <div ng-message="required">You must enter your last name.</div>
             </div>
           </div>
           <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.email.$invalid && signupForm.email.$dirty }">
