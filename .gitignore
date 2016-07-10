@@ -10,7 +10,7 @@ tmp
 out
 *.log
 db.sqlite3
-
+node_modules/
 test-output
 .classpath
 .project
